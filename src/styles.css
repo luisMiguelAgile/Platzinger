@@ -1,0 +1,28 @@
+/* You can add global styles to this file, and also import other style files */
+.avatarFrameoffline {
+    background: rgba(212,228,239,1);
+background: -moz-linear-gradient(-45deg, rgba(212,228,239,1) 0%, rgba(212,228,239,1) 38%, rgba(212,228,239,1) 52%, rgba(134,174,204,1) 61%);
+background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(212,228,239,1)), color-stop(38%, rgba(212,228,239,1)), color-stop(52%, rgba(212,228,239,1)), color-stop(61%, rgba(134,174,204,1)));
+background: -webkit-linear-gradient(-45deg, rgba(212,228,239,1) 0%, rgba(212,228,239,1) 38%, rgba(212,228,239,1) 52%, rgba(134,174,204,1) 61%);
+background: -o-linear-gradient(-45deg, rgba(212,228,239,1) 0%, rgba(212,228,239,1) 38%, rgba(212,228,239,1) 52%, rgba(134,174,204,1) 61%);
+background: -ms-linear-gradient(-45deg, rgba(212,228,239,1) 0%, rgba(212,228,239,1) 38%, rgba(212,228,239,1) 52%, rgba(134,174,204,1) 61%);
+background: linear-gradient(135deg, rgba(212,228,239,1) 0%, rgba(212,228,239,1) 38%, rgba(212,228,239,1) 52%, rgba(134,174,204,1) 61%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d4e4ef', endColorstr='#86aecc', GradientType=1 );
+    text-align: center;
+    padding: 5%;
+    border-radius: 10px;
+    border: 1px solid white;
+    display: inline block
+ }
+   
+ .center{
+    text-align: center !important;
+}
+
+.marto15{
+    margin-top: 15px
+}
+
+.marbo15{
+    margin-bottom: 15px
+}

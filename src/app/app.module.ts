@@ -15,11 +15,12 @@ import { AngularFireModule } from 'angularfire2';
 import { AngularFirestoreModule } from '@angular/fire/firestore';
 import { AngularFireStorageModule } from '@angular/fire/storage';
 import { AngularFireAuthModule } from '@angular/fire/auth';
-import{AngularFireDatabaseModule} from 'angularfire2/database';
+import { AngularFireDatabaseModule } from 'angularfire2/database';
+import { AuthenticationGuard } from './services/authentication.guard';
 
 const appRoutes: Routes = [
   { path: '', component: HomeComponent },
-  { path: 'home', component: HomeComponent },
+  { path: 'home', component: HomeComponent, canActivate: [AuthenticationGuard] },
   { path: 'login', component: LoginComponent },
   { path: 'conversation/:uid', component: ConversationComponent },
   { path: 'profile', component: ProfileComponent }
@@ -43,7 +44,7 @@ const appRoutes: Routes = [
     FormsModule,
     AngularFireModule.initializeApp(environment.firebase),
     AngularFirestoreModule,
-    AngularFireAuthModule, 
+    AngularFireAuthModule,
     AngularFireStorageModule,
     AngularFireDatabaseModule
   ],

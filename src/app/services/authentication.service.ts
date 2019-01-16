@@ -16,6 +16,7 @@ export class AuthenticationService {
     return this.angularFireAtuh.auth.createUserWithEmailAndPassword(email, password);
   }
   getStatus() {
+    console.log(this.angularFireAtuh.authState)
     return this.angularFireAtuh.authState;
   }
   logOut() {
